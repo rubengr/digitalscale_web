@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Digital Scale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body style="background-color: rgb(0,0,0,0.6);">
+  <div id="mySidenav" class="sidenav">
+    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#" data-menu="dashboard"><span class="lang-dashboard">Dashboard</span></a>
+    <a href="#" data-menu="configurations"><span class="lang-configurations">Configurações</span></a>
+  </div>
+  <div class="right_area">
+    <div class="pull-right" style="font-size: 14px; color: white;"> 
+      <button style="background-color: #19b3d3; border: none;" onclick="loadsLanguage('PT');">PT </button>
+      <button style="background-color: #19b3d3; border: none;" onclick="loadsLanguage('EN');">EN </button>
+    </div>
+  </div>  
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer;float:left" onclick="openNav()">&#9776; Menu</span>  
+    <h1 href="#" data-menu="name"><span class="lang-name"> Digital Scale </span></h1>
+    <p class="weight_value"><span id="weight">0</span> Kg</p>
+    <p>GPIO state: <strong> %STATE%</strong></p>
+    <p><a href="/on"><button class="button">ON</button></a></p>
+    <p><a href="/off"><button class="button button2">OFF</button></a></p>
+    <footer class="main-footer"> <div class="pull-right hidden-xs"><span class="lang-version">Versão </span> <span id="version_lbl">-</span> </div><strong>Digital Scale</a> @ 2021</strong></footer></div><script src="js/jquery.min.js"></script><script src="js/java.js"></script>
+  </div>
+</body>
+
+</html>
